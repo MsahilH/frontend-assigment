@@ -1,0 +1,23 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Form Validation</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+  <div class="container">
+    <h1>Login to Dashboard</h1>
+    <form id="myForm">
+      <div class="form-group">
+        <label for="contact">Email or Mobile Number</label>
+        <input type="text" id="contact" name="contact">
+        <span class="error" id="contactError"></span>
+      </div>
+      <button type="submit" id="submitButton" disabled>Next</button>
+    </form>
+  </div>
+  <script src="script.js"></script>
+</body>
+</html>
