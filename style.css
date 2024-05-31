@@ -44,6 +44,7 @@ input[type="text"] {
   color: red;
   font-size: 0.8em;
   display: none;
+  width: 275px;
 }
 
 .next-btn {
@@ -75,19 +76,20 @@ input[type="text"] {
   background-color: rgb(8, 126, 195);
 }
 
-.empty-container {
+.left-container {
   position: relative;
   background-color: white;
   width: 62%;
   margin-bottom: 3%;
 }
-.container1 {
+.right-container {
   position: absolute;
   top: -5%;
-  right: 3%;
+  right: 6%;
   height: 100%;
+  max-width: 100%;
 }
-.container11 {
+.container-inside {
   background-color: white;
   padding: 5%;
   height: 105%;
@@ -153,10 +155,10 @@ input[type="text"] {
     display: flex;
     visibility: hidden;
   }
-  .container .container1 {
+  .container .right-container {
     visibility: visible;
   }
-  .empty-container {
+  .left-container {
     display: none;
   }
   .need-help {
