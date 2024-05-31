@@ -1,23 +1,41 @@
 <!DOCTYPE html>
 <html lang="en">
-<head>
-  <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>Form Validation</title>
-  <link rel="stylesheet" href="style.css">
-</head>
-<body>
-  <div class="container">
-    <h1>Login to Dashboard</h1>
-    <form id="myForm">
-      <div class="form-group">
-        <label for="contact">Email or Mobile Number</label>
-        <input type="text" id="contact" name="contact">
-        <span class="error" id="contactError"></span>
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Form Validation</title>
+    <link rel="stylesheet" href="style.css" />
+  </head>
+  <body>
+    <div class="container">
+     <div class="empty-container"></div>
+     <div class="need-help">Need help? <span> Contact US </span></div>
+      <div class="container1">
+        <div class="container11" >
+            <h1>Login to Dashboard</h1>
+            <form id="myForm">
+              <div class="form-group">
+                <label for="contact">Email or Mobile Number</label>
+                <input type="text" id="contact" name="contact" />
+                <span class="error" id="contactError"></span>
+              </div>
+              <button class="next-btn"type="submit" id="submitButton" disabled >Next</button>
+            </form>
+    
+            <div class="or-divider"><span>Or</span></div>
+            <button class="logo-btn" type="submit" id="submitButton" disabled>
+              <img class="logo" src="./Google.png" alt="google" />
+              Sign in with google
+            </button>
+            <div class="mobile-captch">
+              <div class="mcaptcha">Protected by reCAPTCHA Google <br> <span class="Highlight">Privacy Policy</span> & <span class="Highlight">Terms of Service</span> apply.</div>
+            </div>
+        </div>
+        <div class="desktop-captch">
+        <div class="captcha">Protected by reCAPTCHA Google <br> <span class="Highlight">Privacy Policy</span> & <span class="Highlight">Terms of Service</span> apply.</div>
+        
       </div>
-      <button type="submit" id="submitButton" disabled>Next</button>
-    </form>
-  </div>
-  <script src="script.js"></script>
-</body>
+    </div>
+    <script src="script.js"></script>
+  </body>
 </html>
