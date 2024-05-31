@@ -3,18 +3,16 @@ const contactError = document.getElementById("contactError");
 const submitButton = document.getElementById("submitButton");
 const form = document.getElementById("myForm");
 
-// Function to validate phone number
 function validatePhone(phone) {
-  const phoneRegex = /^\d{10}$/; // Matches 10 digits
+  const phoneRegex = /^\d{10}$/; 
   if (phoneRegex.test(phone)) {
     return true;
   }
   return false;
 }
 
-// Function to validate email
 function validateEmail(email) {
-  const emailRegex = /^[^\s@]+@[^\s@]+\.[^\s@]+$/; // Basic email format check
+  const emailRegex = /^[^\s@]+@[^\s@]+\.[^\s@]+$/; 
   if (emailRegex.test(email)) {
     return true;
   }
@@ -38,7 +36,6 @@ function checkInputType(value) {
   }
 }
 
-// Event listener for input changes
 contactInput.addEventListener("input", () => {
   const inputType = checkInputType(contactInput.value);
   if (inputType == "phone" || inputType == "email") {
@@ -61,15 +58,13 @@ contactInput.addEventListener("input", () => {
   }
 });
 
-// Handle form submission (you can add your logic here)
 form.addEventListener("submit", (event) => {
-  event.preventDefault(); // Prevent default form submission
-
+  event.preventDefault(); 
   const contactValue = contactInput.value.trim();
   const inputType = checkInputType(contactValue);
 
   if (inputType) {
-    alert(`You entered ${inputType}: ${contactValue}`); // Replace with your logic
-    contactInput.value = ""; // Clear input after successful submission
+    alert(`You entered ${inputType}: ${contactValue}`); 
+    contactInput.value = ""; 
   }
 });
