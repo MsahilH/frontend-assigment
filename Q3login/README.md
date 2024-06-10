@@ -35,11 +35,12 @@ File Structure
 
 dashboard-login-page/
 │
-├── index.html          # The main HTML file
-├── style.css           # The main CSS file for styling
-├── script.js           # The main JavaScript file for form validation
-├── Google.png          # Google logo for the sign-in button
-└── README.md           # This README file
+
+├── index.html        
+├── style.css         
+├── script.js           
+├── Google.png         
+└── README.md       
 
 Responsive Design
 The page adjusts its layout based on the screen size to ensure usability on both desktop and mobile devices. This is achieved using media queries in the CSS.
